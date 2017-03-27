@@ -1,0 +1,59 @@
+.control-label {
+  font-weight: normal !important;
+}
+
+.form-group {
+  display: block;
+  clear: both;
+  margin-bottom: 14px;
+}
+.form-group label {
+  font-weight: normal !important;
+}
+
+.widget-body {
+  border-right:1px solid #ECEDFF;
+  border-left:1px solid #ECEDFF;
+  border-bottom:1px solid #ECEDFF;
+}
+.widget-header {
+  border-right:1px solid #ECEDFF;
+  border-left:1px solid #ECEDFF;
+  border-top:1px solid #ECEDFF;
+}
+
+.age-slider-block {
+  margin-bottom: 12px;
+}
+
+.user-input-textarea {
+  width: 100%;
+  padding: 6px;
+}
+
+.map-canvas {
+  max-height:400px;
+  min-height:400px;
+  height:400px;
+  width:100%;
+  margin:0 auto;
+  background:#eee;
+  /*background-image:url(/img/animate.gif);
+  background-repeat:no-repeat;
+  background-position:center;*/
+  font-size:1.2em;
+  color:#777;
+  text-align:center;
+}
+
+.map-control-bc:hover {
+  background-color: #eee !important;
+}
+
+#search-you-container ul.dropdown-menu {
+  padding-left: 8px;
+}
+
+.colorSky {
+  color:#3AA1B9 !important;
+}

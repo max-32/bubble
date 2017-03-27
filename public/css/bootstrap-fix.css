@@ -1,0 +1,24 @@
+.nounderline{text-decoration: none}
+
+/* main logo */
+.logo_bubble {
+	width:inherit !important;
+	height:inherit !important;
+	max-height:38px !important;
+	margin-top: 4px;
+}
+.logo_bubble {
+	/*max-width:inherit !important;*/
+	max-height:38px !important;
+}
+.navbar-brand {
+	padding: 12px 0 0 12px !important;
+	margin:0 0 0 0 !important;
+}
+
+@media (max-width: 768px) {
+	.logo_bubble {
+	  height:32px !important;
+	  margin-top: 0 !important;
+	}
+}
