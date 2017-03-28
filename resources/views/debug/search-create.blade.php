@@ -63,7 +63,7 @@ $(function() {
         // create drawing manager shell
         var shelldmanager = new DrawingManagerShell( shellmap.map() );
 
-
+        // second commit
 
 
 
