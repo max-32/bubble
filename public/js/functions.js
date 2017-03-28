@@ -11,7 +11,7 @@ function log(message) {
 
 /**
  * Function logs content of the parameter to console when debug mode is on
- *
+ * 
  * @param <mixed> message - What to log
  */
 function deb(message) {

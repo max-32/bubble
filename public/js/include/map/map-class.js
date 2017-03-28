@@ -8,7 +8,7 @@
  * @return <void>
  */
 function MapUtilMethods(google, map) {
-
+ 
 	// internal functions
 	function processMapContainer(google, map, elementContainerId) {
 		// maps are loaded to hidden element, so we need to fire "resize" event once hidden element is shown
@@ -261,6 +261,33 @@ function DrawingManagerDataShell(dmanagerShell) {
 				return false;
 			return true;
 		});
+	}
+	// overlays sorted
+	this.featuresSorted = function() {
+		// list
+		let collection = {};
+		let supportedOverlays = self.supportedOverlays(); 
+		
+		// init collection with empty values
+		for (let k in supportedOverlays) {
+			collection[k] = [];
+		}
+
+		// iterate over each overlay ...
+		self.each(function(f, t, fo) {
+			// get current overlay type
+			let overlayType = detectOverlayType(f);
+
+			if ( ! overlayType) return;
+
+			for (let k in collection) {
+				if (k === overlayType) {
+					collection[k].push(f);
+				}
+			}
+		});
+
+		return collection;
 	}
 	// get selected feature on map if any
 	this.selectedOverlay = function() {
