@@ -13,7 +13,7 @@
     background: inherit;
   }
   .navbar {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px !important;;
   }
   .page-content {
     margin-top: 70px !important;
